@@ -1,0 +1,71 @@
+.home{
+    .carousel-content{
+        z-index: -1;
+    }
+    .home-item{
+        width: 100vw;
+        height: 100vh;
+        @include bgImg();
+        color: $white;
+
+        span{
+            font-family: $dancing;
+            font-size: 4rem;
+            color: $primary-color;
+        }
+
+        h1{
+            font-size: 7rem;
+            color: $white!important;
+        }
+
+        &:nth-child(1){background-image: url('/src/img/dishes/01.jpg');}
+        &:nth-child(2){background-image: url('/src/img/dishes/02.jpg');}
+        &:nth-child(3){background-image: url('/src/img/dishes/03.jpg');}
+        &:nth-child(4){background-image: url('/src/img/dishes/09.jpg');}
+    }
+
+    .home-text{
+        position: absolute;
+        bottom: 30%;
+        text-align: center;
+        width: 100%;
+        p{
+            font-family: $gotish;
+            font-weight: 700;
+            font-size: 2rem;
+            word-spacing: 1px;
+            color: $paragraph-color-02!important;
+        }
+    }
+
+    .scroll-down{
+        width: 60px;
+        height: 60px;
+        border: 2px solid $white;
+        position: absolute;
+        border-radius: 50%;
+        color: $white;
+        left: 50%;
+        bottom: 60px;
+        transform: translateX(-50%);
+        z-index: 4;
+        font-size: 1.6rem;
+
+        .fa-chevron-down{
+            animation: scroll 1s infinite;
+        }
+    }
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}

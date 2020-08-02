@@ -1,0 +1,40 @@
+@mixin transition($prop: all, $time: 300ms, $type: linear){
+    -moz-transition: $prop $time $type;
+    -webkit-transition: $prop $time $type;
+    -o-transition: $prop $time $type;
+    transition: $prop $time $type;
+}
+
+@mixin bgImg($size: cover){
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: center center;
+}
+
+//Media Mixins
+// mobile
+@mixin  responsive_mobile() {
+    @media only screen and (max-width: 769px) {
+        @content;
+    }
+}
+
+// tablet
+@mixin  responsive_tab() {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+// variable
+@mixin  responsive_max ($max) {
+    @media only screen and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin  responsive_min ($min) {
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}

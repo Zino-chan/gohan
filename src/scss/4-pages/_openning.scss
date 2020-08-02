@@ -1,0 +1,48 @@
+.open-hours{
+    @include bgImg();
+    padding: 6rem 0;
+    background-attachment: fixed;
+    .container{
+        z-index: 4;
+        position: relative;
+    }
+
+    h2{
+        color: $white;
+        font-size: 3rem;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 4rem;
+
+        &::after,
+        &::before{
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 2px;
+            background-color: $paragraph-color-02;
+            top: 55%;
+            
+        }
+
+        &::after{right: -90px}
+        &::before{left: -90px}
+    }
+    p{
+        color: $primary-color;
+        font-size: 3rem;
+        font-family: $dancing;
+    }
+
+    span{
+        font-size: 3rem;
+        font-weight: bold;
+        display: block;
+        color: $white;
+    }
+
+    h4{
+        color: $white;
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,50 @@
+.contact{
+    @include bgImg();
+    background-image: url('/src/img/bg2.jpg');
+
+    .contact-content{z-index: 5; position: relative;}
+    .map{
+        .mapouter{position:relative;text-align:right;height:700px;width:100%;}
+        .gmap_canvas {overflow:hidden;background:none!important;height:700px;width:100%;}
+    }
+
+    .contact-form{
+        background: rgba(0,0,0,.7);
+        padding: 5rem 2rem;
+        color: $white;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+
+        h3{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 150px;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $primary-color;
+            }
+        }
+
+        label{font-size: 1.4rem;}
+
+        .form-control{
+            background-color: #222121;
+            border-color: #222121;
+        }
+
+        textarea{
+            height: 100%;
+            &:focus,
+            &:active{
+                border-color: $primary-color!important;
+                box-shadow: 0 0 0 0.2rem rgba(156, 194, 100,.4)!important;
+            }
+        }
+    }
+}
+

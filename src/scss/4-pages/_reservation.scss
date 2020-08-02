@@ -1,0 +1,39 @@
+.reservation{
+    @include bgImg();
+    background-image: url('/src/img/bg.jpg');
+    padding: 7rem 0;
+    background-attachment: fixed;
+
+    .booking-form{
+        position: relative;
+        z-index: 4;
+        background: $white;
+        padding: 0 3rem 4rem 3rem;
+        width: 60%;
+
+        label{font-weight: 700; font-size: 1.4rem;}
+
+        .booking-title{
+            line-height: 1px;
+            span{
+                font-size: 6rem;
+                color: $primary-color;
+                font-family: $dancing;
+                text-transform: capitalize;
+            }
+
+            h2{
+                font-size: 3rem;
+                font-weight: 700;
+            }
+        }
+
+        .btn-main{
+            color: $white;
+            background-color: $primary-color;
+            padding: 1rem 2.5rem;
+            font-size: 1.5rem;
+        }
+    }
+    
+}

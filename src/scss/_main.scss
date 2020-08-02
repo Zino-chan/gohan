@@ -1,0 +1,23 @@
+// 1 - SETTINGS
+@import '1-settings/colors';
+@import '1-settings/fonts';
+@import '1-settings/typography';
+
+// 2 - TOOLS
+@import '2-tools/mixins';
+
+// 3 - ELEMENTS
+@import '3-elements/base';
+@import '3-elements/responsive';
+
+// 4 - PAGES
+@import '4-pages/header';
+@import '4-pages/home';
+@import '4-pages/about';
+@import '4-pages/reservation';
+@import '4-pages/services';
+@import '4-pages/menu';
+@import '4-pages/openning';
+@import '4-pages/contact';
+
+

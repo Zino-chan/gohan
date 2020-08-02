@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: $general-font;
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $heading-font;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $heading-color;
+}
+
+p{
+    font-family: $paragraph-font;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: $paragraph-color-01;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+.black{background-color: $black!important;}
+
+input{
+    height: 50px!important;
+    &:focus,
+    &:active{
+        border-color: $primary-color!important;
+        box-shadow: 0 0 0 0.2rem rgba(156, 194, 100,.4)!important;
+    }
+}

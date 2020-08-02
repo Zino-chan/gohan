@@ -1,0 +1,115 @@
+
+@include responsive_tab(){
+    .header{
+        .navbar{position: initial!important;}
+        .navbar-nav{
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            margin: 0 auto;
+            max-height: 0;
+            background: #000;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            overflow: hidden;
+            @include transition();
+            &.open{
+                max-height: 500px;
+            }
+
+            .nav-item{
+                margin-bottom: 2rem;;
+            }
+        }
+        .menu-toggler{
+            display: inline-block!important;
+        }
+    }
+
+    .dishes{
+        margin-left: 0!important;
+    }
+
+    .title::before{left: -30px!important;}
+
+    .reservation .booking-form {width: 100%!important;}
+
+    .contact-content{flex-direction: column-reverse!important;}
+}
+
+@include  responsive_mobile() {
+    html{font-size: 13px!important;}
+
+    .home h1{font-size: 6rem!important;}
+
+    .dishes{
+        .col-md-4{
+            max-width: 100%!important; 
+            margin-bottom: 2rem!important;
+            flex-basis: 100%!important;
+        }
+        .circle-arrow::before {display: none!important;}
+    }
+
+    .services .col-md-12,
+    .menu .col-md-12 {margin-bottom: 2rem;}
+
+    .contact .contact-form{width: 100%!important;}
+}
+
+@include responsive_max(420px){
+    html{font-size: 11px!important;}
+
+    .header .navbar{width: 92%!important;}
+
+    .home h1{font-size: 3.5rem!important;}
+
+    .title{
+        margin-bottom: 3rem;
+        &::before{
+            width: 100px!important;
+            height: 10px!important;
+            left: 0!important;
+            bottom: -15px!important;
+        }
+    }
+
+    .table-text{order: -1;}
+
+    .booking-title {
+        line-height: .8!important;
+        h2{font-size: 2rem!important;}
+        span{font-size: 5rem!important;}
+    }
+
+    .menu {
+        .col-lg-12{
+            flex-direction: column!important;
+            text-align: center;
+        }
+        
+        .nav{width: 100%!important;}
+        .menu-img{
+            margin-right: 0!important;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@include responsive_min(1025px){
+    body::-webkit-scrollbar-thumb {
+        width: 13px;
+        background: $primary-color;
+    }
+    body::-webkit-scrollbar {
+        width: 13px;
+        z-index: 99;
+    }
+
+    body::-webkit-scrollbar-track {
+        border: 1px solid #ccc;
+        background: #eaeaea;
+    }
+}

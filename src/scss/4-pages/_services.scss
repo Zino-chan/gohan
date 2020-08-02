@@ -1,0 +1,25 @@
+.services{
+    padding: 10rem 0;
+
+    .services-info {margin-bottom: 7rem;}
+
+    .services-content{
+        .row{margin: 0!important;}
+
+        .services-img{
+            @include bgImg(contain);
+            font-size: 12rem;
+            color: $primary-color;
+            background-color: #ffedde;
+           
+    
+            .delivery{
+                @include bgImg(contain);
+                height: 250px;
+                width: 100%;
+                margin-top: 1.64rem;
+            }
+        }
+    }
+    
+}

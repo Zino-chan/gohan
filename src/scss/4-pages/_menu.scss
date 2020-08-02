@@ -1,0 +1,46 @@
+.menu{
+    padding: 8rem 0;
+        
+        .menu-img{
+            width: 150px;
+            height: 135px;
+            border-radius: 50%;
+            @include bgImg();
+        }
+
+        h5{margin-bottom: 1.5rem;}
+
+        .menu-price{font-size: 2rem; color: $primary-color;}
+
+        .col-md-6{margin-bottom: 4rem;}
+    
+        .tab-content>.active {
+            display: flex!important;
+        }
+
+        .nav-pills .nav-link {
+            color: $heading-color;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            position: relative;
+            padding: 0!important;
+            margin: 0 1rem;
+
+            &::after{
+                content: "";
+                width: 0;
+                height: 4px;
+                border-radius: 5px;;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                background-color: $primary-color;
+            }
+
+            &.active{
+                background-color: transparent!important;
+                &::after{width: 100%; @include transition();}
+            }
+        }
+
+}

@@ -1,0 +1,38 @@
+.header{
+    height: 6rem;
+    z-index: 9;
+    background-color: $black;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    .navbar{
+        width: 80%;
+        margin: 0 auto;
+
+        .logo{
+            .nav-link{font-family: $gotish; color: $primary-color; font-size: 3rem;}
+        }
+
+        .menu-toggler{
+            font-size: 3rem;
+            color: $primary-color;
+            display: none;
+            cursor: pointer;
+        }
+
+        .nav-item{margin: 0 .6rem;}
+        
+        .nav-link{
+            color: $white;
+            font-size: 1.4rem;
+            @include transition();
+
+            &:hover{
+                transform: scale(1.2);
+                color: $primary-color;
+                @include transition();
+            }
+        }
+    
+    }
+}
