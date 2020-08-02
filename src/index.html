@@ -7,7 +7,7 @@
 
     <title>Gohan</title>
 </head>
-<body id="scroller">
+<body>
     <!-- Header Start -->
     <header class="header">
             <div class="navbar navbar-expand-lg h-100">
@@ -75,12 +75,12 @@
         <div class="container">
             <div class="row  about-info">
                 <div class="col-md-6">
-                    <div class="title">
+                    <div class="title slide-left">
                         <h2>Some of Owr best Dishes</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="title-text">
+                    <div class="title-text slide-right">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             quisquam corrupti totam consectetur quia asperiores! Necessitatibus, 
@@ -89,9 +89,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row dishes">
+            <div class="row dishes flow-hidden">
                 <div class="col-md-4">
-                    <div class="dish d-flex" style="background-image: url('/src/img/dishes/01.jpg');">
+                    <div class="dish slide-down d-flex" style="background-image: url('/src/img/dishes/01.jpg');">
                         <div class="dish-info">
                             <h3>Sashimi</h3>
                             <p> Lorem ipsum dolor sit amet consectetur. </p>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="dish d-flex" style="background-image: url('/src/img/dishes/03.jpg');">
+                    <div class="dish slide-up d-flex" style="background-image: url('/src/img/dishes/03.jpg');">
                         <div class="dish-info">
                             <h3>Sashimi</h3>
                             <p> Lorem ipsum dolor sit amet consectetur. </p>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mx-auto d-flex flex-column justify-content-center align-items-center">
-                    <div class="circle-arrow mb-3">
+                    <div class="circle-arrow slide-right mb-3">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                     <a href="#">see more</a>
@@ -123,7 +123,7 @@
     <section class="reservation position-relative" id="reservation">
         <div class="overlay"></div>
         <div class="container">
-            <div class="booking-form">
+            <div class="booking-form slide-in">
                 <div class="booking-title text-center mb-5">
                     <span>Book a Table</span>
                     <h2>Make a reservation</h2>
@@ -169,12 +169,12 @@
         <div class="container">
             <div class="row  services-info ">
                 <div class="col-md-6">
-                    <div class="title">
+                    <div class="title slide-left">
                         <h2>Owr <br> Services</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="title-text">
+                    <div class="title-text slide-right">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             quisquam corrupti totam consectetur quia asperiores! Necessitatibus, 
@@ -183,33 +183,33 @@
                     </div>
                 </div>
             </div>
-            <div class="row services-content">
+            <div class="row services-content flow-hidden">
                 <div class="col-lg-6 col-md-12">
                    <div class="row">
                     <div 
-                        class="col-md-6 w-100 services-img" 
+                        class="col-md-6 w-100 services-img slide-down" 
                         style="background-image: url('/src/img/icons/table.png'); height: 250px;"
                     ></div>
-                    <div class="col-md-6 py-2 table-text services-text d-flex justify-content-center align-items-center flex-column">
+                    <div class="col-md-6 py-2 slide-right table-text services-text d-flex justify-content-center align-items-center flex-column">
                         <h4>advance table booking</h4>
                         <p>
                             Lorem ipsum dolor sit amet.
                         </p>
                     </div>
-                    <div class="col-md-6 services-text py-2 d-flex justify-content-center align-items-center flex-column">
+                    <div class="col-md-6 slide-left services-text py-2 d-flex justify-content-center align-items-center flex-column">
                         <h4>Events booking</h4>
                         <p>
                             Lorem ipsum dolor sit amet.
                         </p>
                     </div>
-                    <div class="col-md-6 w-100 services-img text-center">
+                    <div class="col-md-6 w-100 services-img text-center slide-up">
                         <i class="fas fa-birthday-cake"></i>
                     </div>
                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 h-100">
                     <div class="row  services-img py-5 h-100 w-100">
-                        <div class="delivery " style="background-image: url('/src/img/icons/scooter.png');"></div>
+                        <div class="delivery slide-in" style="background-image: url('/src/img/icons/scooter.png');"></div>
                         <div class="services-text mx-auto text-center mt-5">
                             <h4>Free home delevery <br> at your door steps</h4>
                             <p>
@@ -224,21 +224,21 @@
     <!-- Services Section Ends -->
 
     <!-- Openning Section Start -->
-    <section class="open-hours position-relative" id="hours" style="background-image: url('/src/img/dishes/11.jpg');">
+    <section class="open-hours position-relative flow-hidden" id="hours" style="background-image: url('/src/img/dishes/11.jpg');">
         <div class="overlay"></div>
         <div class="container text-center">
-            <h2 data-sal="slide-down">Opening Hours</h2>
+            <h2 class="slide-down">Opening Hours</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 rotate">
                     <p>Sunday to <br>Tuesday</p>
                     <span>09:00 AM</span><span>01:00AM</span>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 rotate">
                     <p>Friday and <br>Saturday</p>
                     <span>08:00 AM</span><span>03:00AM</span>
                 </div>
             </div>
-            <h4>Reservation number: 098656765432</h4>
+            <h4 class="slide-up">Reservation number: 098656765432</h4>
         </div>
     </section>
     <!-- Openning Section Ends -->
@@ -248,12 +248,12 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-6">
-                    <div class="title">
+                    <div class="title slide-left">
                         <h2>Explore Owr <br> Menu</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="title-text">
+                    <div class="title-text slide-right">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             quisquam corrupti totam consectetur quia asperiores! Necessitatibus.
@@ -279,8 +279,8 @@
                     <div class="glide__track" data-glide-el="track">
                         <div class="glide__slides">
                             <!-- Main Start -->
-                            <div class="row glide__slide">
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                            <div class="row menu-wrapper glide__slide">
+                                <div class="menu-item col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/01.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -290,7 +290,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 menu-item col-lg-12 d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/02.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -300,7 +300,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6  col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/03.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -310,7 +310,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/04.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -320,7 +320,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/05.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -330,7 +330,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/06.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -344,8 +344,8 @@
                             <!-- Main Ends -->
 
                             <!-- Desserts Start -->
-                            <div class="row glide__slide">
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                            <div class="row glide__slide menu-wrapper">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/01.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -355,7 +355,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/02.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -365,7 +365,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/03.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -375,7 +375,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-lg-6 col-md-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/04.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -385,7 +385,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/05.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -395,7 +395,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/dessert/06.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -409,8 +409,8 @@
                             <!-- Desserts Ends -->
 
                             <!-- Drink Start -->
-                            <div class="row glide__slide" >
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                            <div class="row glide__slide menu-wrapper">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/01.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -420,7 +420,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/02.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -430,7 +430,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/03.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -440,7 +440,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/04.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -450,7 +450,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/05.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -460,7 +460,7 @@
                                         <div class="menu-price ml-5">$20.30</div>
                                     </div>  
                                 </div>
-                                <div class="col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
+                                <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
                                     <div class="menu-img mr-5" style="background-image: url('/src/img/drink/06.jpg');"></div>
                                     <div class="menu-content d-flex justify-content-between align-items-center">
                                         <div class="menu-text">
@@ -484,9 +484,7 @@
     <footer class="contact position-relative" id="contact">
         <div class="overlay"></div>
         <div class="row contact-content align-items-center">
-            <div class="col-xl-6 col-lg-12" data-sal="slide-right"
-            style="--sal-duration: 3s; --sal-delay: 0.3s;"
-            data-sal-easing="ease-out-back">
+            <div class="col-xl-6 col-lg-12 slide-left">
                 <div class="map">
                     <div class="mapouter">
                         <div class="gmap_canvas">
@@ -498,9 +496,7 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
-                <form class="contact-form" data-sal="slide-left"
-                style="--sal-duration: 3s; --sal-delay: 0.3s;"
-                data-sal-easing="ease-out-back">
+                <form class="contact-form slide-right">
                     <h3 class="text-center text-white display-3 mb-5">Contact</h3>
                     <div class="form-row">
                         <div class="col-lg-6 col-md-12 mb-3">
