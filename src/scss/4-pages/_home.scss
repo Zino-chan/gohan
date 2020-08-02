@@ -3,10 +3,12 @@
         z-index: -1;
     }
     .home-item{
+        z-index: 9;
         width: 100vw;
         height: 100vh;
         @include bgImg();
         color: $white;
+
 
         span{
             font-family: $dancing;
@@ -19,10 +21,14 @@
             color: $white!important;
         }
 
-        &:nth-child(1){background-image: url('/src/img/dishes/01.jpg');}
-        &:nth-child(2){background-image: url('/src/img/dishes/02.jpg');}
-        &:nth-child(3){background-image: url('/src/img/dishes/03.jpg');}
-        &:nth-child(4){background-image: url('/src/img/dishes/09.jpg');}
+        &:nth-child(1){background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('/src/img/dishes/01.jpg');}
+        &:nth-child(2){background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('/src/img/dishes/02.jpg');}
+        &:nth-child(3){background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('/src/img/dishes/03.jpg');}
+        &:nth-child(4){background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('/src/img/dishes/09.jpg');}
     }
 
     .home-text{

@@ -1,18 +1,15 @@
 import '../scss/_main.scss';
-import Glide, { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Autoplay,  Controls } from '@glidejs/glide/dist/glide.modular.esm'
 
-//new Glide('.glide').mount({ Autoplay })
 
-//var input = document.querySelector('#options-autoplay-input')
-
-const glideMenu = new Glide('.glide-menu', {
+new Glide('.glide-menu', {
   perView: 1
-})
+}).mount({ Controls });
 
-const glide = new Glide('.glide', {
-    autoplay: 1000,
+new Glide('.glide', {
+    autoplay: 3000,
     perView: 1
-}).mount();
+}).mount({Autoplay});
 
 
 
