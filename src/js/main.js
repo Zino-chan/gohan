@@ -26,14 +26,19 @@ ScrollTrigger.scrollerProxy("body", {
 
 //Glide
 
-new Glide('.glide-menu', {
-  perView: 1
-}).mount({ Controls });
+if(document.querySelector('.glide')){
+    new Glide('.glide', {
+        autoplay: 3000,
+        perView: 1
+    }).mount({Autoplay});
+}
 
-new Glide('.glide', {
-    autoplay: 3000,
-    perView: 1
-}).mount({Autoplay});
+if(document.querySelector('.glide-menu')){
+    new Glide('.glide-menu', {
+        perView: 1
+      }).mount({ Controls });
+}
+
 
 //Gsap
 gsap.set("body", {
@@ -69,7 +74,7 @@ gsap.utils.toArray('.slide-down').forEach(item => {
         scrollTrigger: {
             trigger: item
         },  
-        y: '100%',
+        y: '-100%',
         opacity: 0,
         duration: 2
     })
@@ -80,7 +85,7 @@ gsap.utils.toArray('.slide-up').forEach(item => {
         scrollTrigger: {
             trigger: item
         },  
-        y: '-100%',
+        y: '100%',
         opacity: 0,
         duration: 2
     })
@@ -101,7 +106,7 @@ gsap.utils.toArray('.rotate').forEach(item => {
         scrollTrigger: {
             trigger: item
         },  
-        rotateY: 360,
+        rotateY: 180,
         duration: 2
     })
 })
@@ -116,15 +121,7 @@ gsap.from('.nav .nav-item', {
     stagger: .2
 })
 
-gsap.from('.menu-wrapper .menu-item', {
-    scrollTrigger: {
-        trigger: '.menu-wrapper .menu-item'
-    },
-    y: 100,
-    opacity: 0,
-    duration: 1.5,
-    stagger: .2
-})
+
 
 
 

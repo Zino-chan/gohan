@@ -1,5 +1,6 @@
 .menu{
     padding: 8rem 0;
+    margin-bottom: 12rem;
         
         .menu-img{
             width: 150px;
@@ -12,19 +13,21 @@
 
         .menu-price{font-size: 2rem; color: $primary-color;}
 
-        .col-md-6{margin-bottom: 4rem;}
-    
-        .tab-content>.active {
-            display: flex!important;
+        .menu-link{
+            font-size: 2rem;
+            color: $primary-color;
         }
 
-        .nav-pills .nav-link {
+        .col-md-6{margin-bottom: 4rem;}
+
+        .nav .nav-link {
             color: $heading-color;
             font-size: 1.6rem;
             text-transform: capitalize;
             position: relative;
             padding: 0!important;
             margin: 0 1rem;
+            cursor: pointer;
 
             &::after{
                 content: "";
@@ -37,10 +40,10 @@
                 background-color: $primary-color;
             }
 
-            &.active{
-                background-color: transparent!important;
-                &::after{width: 100%; @include transition();}
-            }
+            &:hover{transform: scale(1.1); @include transition();}
+
         }
+
+        .glide__bullet--active .nav-link::after{width: 100%; @include transition();}
 
 }
