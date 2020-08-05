@@ -17,10 +17,11 @@
             @include transition();
             &.open{
                 max-height: 500px;
+                padding: 2rem;
             }
 
             .nav-item{
-                margin-bottom: 2rem;;
+                margin-bottom: 2.5rem;;
             }
         }
         .menu-toggler{
@@ -98,18 +99,3 @@
     }
 }
 
-// @include responsive_min(1025px){
-//     body::-webkit-scrollbar-thumb {
-//         width: 13px;
-//         background: $primary-color;
-//     }
-//     body::-webkit-scrollbar {
-//         width: 13px;
-//         z-index: 99;
-//     }
-
-//     body::-webkit-scrollbar-track {
-//         border: 1px solid #ccc;
-//         background: #eaeaea;
-//     }
-// }

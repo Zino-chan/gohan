@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded',() => {
 	//Nav-toggle
 	document.querySelector('.menu-toggler').addEventListener('click', () => {
 		document.querySelector('.navbar-nav').classList.toggle('open');
+		document.querySelector('.menu-toggler').classList.toggle('open');
 	})
 
  })
