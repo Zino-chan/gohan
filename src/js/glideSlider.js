@@ -3,12 +3,6 @@ import Glide, { Autoplay,  Controls } from '@glidejs/glide/dist/glide.modular.es
 //Glide
 
 export default () => {
-    if(document.querySelector('.glide')){
-        new Glide('.glide', {
-            autoplay: 3000,
-            perView: 1
-        }).mount({Autoplay});
-    }
     
     if(document.querySelector('.glide-menu')){
         new Glide('.glide-menu', {

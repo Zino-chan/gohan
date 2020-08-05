@@ -31,6 +31,9 @@
                 font-size: 1.4rem;
             }
         }
+
+        &:nth-child(1){background-image: url('/src/img/dishes/01.jpg');}
+        &:nth-child(2){background-image: url('/src/img/dishes/03.jpg');}
     }
 
     .circle-arrow{

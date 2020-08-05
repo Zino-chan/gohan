@@ -1,15 +1,17 @@
 .home{
+    padding: 5rem;
+    @include bgImg();
+        color: $white;
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('/src/img/dishes/02.jpg');
     .carousel-content{
         z-index: -1;
     }
     .home-item{
         z-index: 9;
-        width: 100vw;
-        height: 100vh;
-        @include bgImg();
-        color: $white;
-        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-            url('/src/img/dishes/09.jpg');
+        width: 100%;
+        height: 100%;
+        
         
         
 
@@ -26,10 +28,9 @@
     }
 
     .home-text{
-        position: absolute;
-        bottom: 30%;
         text-align: center;
-        width: 100%;
+        margin-bottom: 4rem;
+        
         p{
             font-family: $gotish;
             font-weight: 700;
@@ -39,21 +40,18 @@
         }
     }
 
-    .scroll-down{
-        width: 60px;
-        height: 60px;
-        border: 2px solid $white;
-        position: absolute;
-        border-radius: 50%;
-        color: $white;
-        left: 50%;
-        bottom: 60px;
-        transform: translateX(-50%);
-        z-index: 4;
-        font-size: 1.6rem;
+    .home-btns{
+        .btn{
+            color: $white;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background-color: #5c7c2d;
 
-        .fa-chevron-down{
-            animation: scroll 1s infinite;
+            &:hover{
+                @include transition();
+                background-color: $primary-color;
+            }
         }
     }
 }

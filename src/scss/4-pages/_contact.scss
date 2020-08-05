@@ -50,5 +50,14 @@
             }
         }
     }
+
+    .social-icons {
+        .nav-link{
+            font-size: 1.5rem;
+            color: $white;
+            @include transition();
+            &:hover{transform: scale(1.2);}
+        }
+    }
 }
 

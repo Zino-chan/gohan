@@ -2,6 +2,7 @@
     padding: 8rem 0;
     margin-bottom: 12rem;
         
+        
         .menu-img{
             width: 150px;
             height: 135px;
@@ -46,4 +47,36 @@
 
         .glide__bullet--active .nav-link::after{width: 100%; @include transition();}
 
+        .menu-wrapper:nth-of-type(1){
+            .menu-item{
+                &:nth-child(1){.menu-img{background-image: url('/src/img/dishes/01.jpg');}}
+                &:nth-child(2){.menu-img{background-image: url('/src/img/dishes/02.jpg');}}
+                &:nth-child(3){.menu-img{background-image: url('/src/img/dishes/03.jpg');}}
+                &:nth-child(4){.menu-img{background-image: url('/src/img/dishes/04.jpg');}}
+                &:nth-child(5){.menu-img{background-image: url('/src/img/dishes/05.jpg');}}
+                &:nth-child(6){.menu-img{background-image: url('/src/img/dishes/06.jpg');}}       
+            }
+        }
+        
+        .menu-wrapper:nth-of-type(2){
+            .menu-item{
+                &:nth-child(1){.menu-img{background-image: url('/src/img/dessert/01.jpg');}}
+                &:nth-child(2){.menu-img{background-image: url('/src/img/dessert/02.jpg');}}
+                &:nth-child(3){.menu-img{background-image: url('/src/img/dessert/03.jpg');}}
+                &:nth-child(4){.menu-img{background-image: url('/src/img/dessert/04.jpg');}}
+                &:nth-child(5){.menu-img{background-image: url('/src/img/dessert/05.jpg');}}
+                &:nth-child(6){.menu-img{background-image: url('/src/img/dessert/06.jpg');}}       
+            }
+        }
+
+        .menu-wrapper:nth-of-type(3){
+            .menu-item{
+                &:nth-child(1){.menu-img{background-image: url('/src/img/drink/01.jpg');}}
+                &:nth-child(2){.menu-img{background-image: url('/src/img/drink/02.jpg');}}
+                &:nth-child(3){.menu-img{background-image: url('/src/img/drink/03.jpg');}}
+                &:nth-child(4){.menu-img{background-image: url('/src/img/drink/04.jpg');}}
+                &:nth-child(5){.menu-img{background-image: url('/src/img/drink/05.jpg');}}
+                &:nth-child(6){.menu-img{background-image: url('/src/img/drink/06.jpg');}}   
+            }
+        }
 }

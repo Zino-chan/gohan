@@ -1,5 +1,6 @@
 .open-hours{
     @include bgImg();
+    background-image: url('/src/img/dishes/11.jpg');
     padding: 6rem 0;
     .container{
         z-index: 4;

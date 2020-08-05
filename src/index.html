@@ -6,21 +6,14 @@
     <title>Gohan</title>
     
 </head>
-<body data-barba="wrapper" id="body">
+<body id="body">
     <!-- PreLoader Start-->
     <div class='spinner-wrapper'>
         <div class="spinner"></div>
     </div>
     <!-- PreLoader Ends -->
 
-    <ul class="transition">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
     
-    <main data-barba="container" data-barba-namespace="home">
     
     <!-- Header Start -->
     <header class="header" id="header"></header>
@@ -31,16 +24,17 @@
     <section id="home" class="home vh-100 vw-100 position-relative text-center">
         <div class="conatiner h-100 w-100">
             <div class="home-item d-flex justify-content-center align-items-center flex-column">
-                <span>Welcome to</span>
-                <h1>Gohan Restaurant</h1>
+                <div class="home-item-text">
+                    <span>Welcome to</span>
+                    <h1>Gohan Restaurant</h1>
+                </div>
+                <div class="home-text">
+                    <p>Sushi, Ramen and more Traditional food!</p>
+                </div>
+                <div class="home-btns">
+                    <a href="menu.html" class="btn mx-2">View Menu</a>
+                </div>
             </div>
-            
-            <div class="home-text">
-                <p>Sushi, Ramen and more Traditional food!</p>
-            </div>
-            <a href="#about" class="scroll-down">
-                <i class="fas fa-chevron-down"></i>
-            </a>
         </div>
     </section>
     <!-- Home Section Ends -->
@@ -66,7 +60,7 @@
             </div>
             <div class="row dishes flow-hidden">
                 <div class="col-md-4">
-                    <div class="dish slide-down d-flex" style="background-image: url('/src/img/dishes/01.jpg');">
+                    <div class="dish slide-down d-flex">
                         <div class="dish-info">
                             <h3>Sashimi</h3>
                             <p> Lorem ipsum dolor sit amet consectetur. </p>
@@ -75,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="dish slide-up d-flex" style="background-image: url('/src/img/dishes/03.jpg');">
+                    <div class="dish slide-up d-flex">
                         <div class="dish-info">
                             <h3>Sashimi</h3>
                             <p> Lorem ipsum dolor sit amet consectetur. </p>
@@ -162,8 +156,8 @@
                 <div class="col-lg-6 col-md-12">
                    <div class="row">
                     <div 
-                        class="col-md-6 w-100 services-img slide-down" 
-                        style="background-image: url('/src/img/icons/table.png'); height: 250px;"
+                        class="col-md-6 w-100 services-img table-img slide-down" 
+                        style="height: 250px;"
                     ></div>
                     <div class="col-md-6 py-2 slide-right table-text services-text d-flex justify-content-center align-items-center flex-column">
                         <h4>advance table booking</h4>
@@ -184,7 +178,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 h-100">
                     <div class="row  services-img py-5 h-100 w-100">
-                        <div class="delivery slide-in" style="background-image: url('/src/img/icons/scooter.png');"></div>
+                        <div class="delivery slide-in" ></div>
                         <div class="services-text mx-auto text-center mt-5">
                             <h4>Free home delevery <br> at your door steps</h4>
                             <p>
@@ -199,7 +193,7 @@
     <!-- Services Section Ends -->
 
     <!-- Openning Section Start -->
-    <section class="open-hours position-relative flow-hidden" id="hours" style="background-image: url('/src/img/dishes/11.jpg');">
+    <section class="open-hours position-relative flow-hidden" id="hours">
         <div class="overlay"></div>
         <div class="container text-center">
             <h2 class="slide-down">Opening Hours</h2>
@@ -235,69 +229,69 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div class="row">
                 <div class="col-md-12">
                     <!-- Main Start -->
-                    <div class="row menu-wrapper glide__slide">
+                    <div class="row menu-wrapper">
                         <div class="menu-item col-xl-6 col-lg-12 d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/01.jpg');"></div>
+                            <div class="menu-img mr-5"></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Sachimi</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
-                                <div class="menu-price ml-5">$20.30</div>
+                                <div class="menu-price ml-5">$30.30</div>
                             </div>  
                         </div>
                         <div class="col-xl-6 menu-item col-lg-12 d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/02.jpg');"></div>
+                            <div class="menu-img mr-5"></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Uramaki</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
                                 <div class="menu-price ml-5">$20.30</div>
                             </div>  
                         </div>
                         <div class="col-xl-6  col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/03.jpg');"></div>
+                            <div class="menu-img mr-5" ></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Maki</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
                                 <div class="menu-price ml-5">$20.30</div>
                             </div>  
                         </div>
                         <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/04.jpg');"></div>
+                            <div class="menu-img mr-5"></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Temaki</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
-                                <div class="menu-price ml-5">$20.30</div>
+                                <div class="menu-price ml-5">$60.30</div>
                             </div>  
                         </div>
                         <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/05.jpg');"></div>
+                            <div class="menu-img mr-5"></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Nigiri.</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
-                                <div class="menu-price ml-5">$20.30</div>
+                                <div class="menu-price ml-5">$20.00</div>
                             </div>  
                         </div>
                         <div class="col-xl-6 col-lg-12 menu-item d-flex justify-content-center align-items-center mb-3">
-                            <div class="menu-img mr-5" style="background-image: url('/src/img/dishes/06.jpg');"></div>
+                            <div class="menu-img mr-5"></div>
                             <div class="menu-content d-flex justify-content-between align-items-center">
                                 <div class="menu-text">
-                                    <h5>Sachimi hajimi chan</h5>
+                                    <h5>Hamachi</h5>
                                     <span class="text-muted">Touna/Rice/Onion/Fish</span>
                                 </div>
-                                <div class="menu-price ml-5">$20.30</div>
+                                <div class="menu-price ml-5">$40.30</div>
                             </div>  
                         </div>
                     </div>
@@ -317,9 +311,8 @@
     <footer class="contact position-relative" id="footer"></footer> 
     <!-- Footer Ends -->
 
-</main>
     
-    
+
 
 </body>
 </html>

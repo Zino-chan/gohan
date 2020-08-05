@@ -1,23 +1,12 @@
 import '../scss/_main.scss';
-import glideInit from './glide';
-import injectComponents from './components';
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-//import barba from '@barba/core';
-import {pageAnimation, smoothScroll, pageTransition} from './gsap';
+import glideInit from './glideSlider';
+import {pageAnimation, smoothScroll} from './animation';
 
-gsap.registerPlugin(ScrollTrigger);
+window.addEventListener('DOMContentLoaded',() => {
 
-
-
-
-
- window.addEventListener('DOMContentLoaded',() => {
-
-	document.querySelector('.spinner-wrapper').style.display = 'none';
-
-	//components
-	injectComponents();
+	if(document.querySelector('.spinner-wrapper')){
+		document.querySelector('.spinner-wrapper').style.display = 'none';
+	}
 
 	//SmoothScrollbar
 	smoothScroll();
@@ -25,46 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 	//Glide
 	glideInit();
 
-
-	//Barba
-	barba.init({
-		sync: true,
-
-		transitions: [
-			{
-				async leave(data) {
-					pageTransition();
-					await delay(1000);
-					data.current.container.remove();
-				},
-
-				async beforeEnter(data) {
-					ScrollTrigger.getAll().forEach(t => t.kill());
-				},
-
-				async enter(data) {	
-					// In the next page
-					injectComponents();
-					pageAnimation();
-				},
-
-				async once(data) {
-					pageAnimation();
-				},
-			},
-		],
-	});
-
-
-	function delay(n) {
-		n = n || 2000;
-		return new Promise((done) => {
-			setTimeout(() => {
-				done();
-			}, n);
-		});
-	}
-
+	//Gsap
+	pageAnimation();
 
 
 	//Nav-toggle

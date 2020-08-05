@@ -11,6 +11,8 @@
             font-size: 12rem;
             color: $primary-color;
             background-color: #ffedde;
+
+            &.table-img{background-image: url('/src/img/icons/table.png');}
            
     
             .delivery{
@@ -18,6 +20,7 @@
                 height: 250px;
                 width: 100%;
                 margin-top: 1.64rem;
+                background-image: url('/src/img/icons/scooter.png');
             }
         }
     }
