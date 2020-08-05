@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body data-barba="wrapper" id="body">
+    <div class="barba-transition">
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
+    <main data-barba="container" data-barba-namespace="about">
     <!-- Header Start -->
     <header class="header" id="header"></header>
     <!-- Header Ends -->
 
-    <main>
+    
         <!-- About Section Start -->
         <section class="about" id="about">
             <div class="container">
@@ -91,10 +100,13 @@
             </div>
         </section>
         <!-- About Section Ends -->
-    </main>
-
+    
     <!-- Footer  Start -->
     <footer class="contact position-relative" id="footer"></footer> 
     <!-- Footer Ends -->
+
+    </main>
+    
+
 </body>
 </html>

@@ -25,6 +25,51 @@ module.exports = merge(common, {
           collapseWhitespace: true,
           removeComments: true
         }
+      }),
+      new HtmlWebpackPlugin({
+        template: "./src/about.html",
+        filename: '../about.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: "./src/reservation.html",
+        filename: '../reservation.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: "./src/services.html",
+        filename: '../services.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: "./src/menu.html",
+        filename: '../menu.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: "./src/contact.html",
+        filename: '../contact.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
       })
     ]
   },

@@ -1,5 +1,9 @@
 .contact{
     @include bgImg();
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
     background-image: url('/src/img/bg2.jpg');
 
     .contact-content{z-index: 5; position: relative;}

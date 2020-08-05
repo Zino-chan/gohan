@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>Gohan</title>
+    
 </head>
-<body>
+<body data-barba="wrapper" id="body">
+    <!-- PreLoader Start-->
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div>
+    <!-- PreLoader Ends -->
+
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+    <main data-barba="container" data-barba-namespace="home">
+    
     <!-- Header Start -->
     <header class="header" id="header"></header>
     <!-- Header Ends -->
 
+
     <!-- Home Section Start -->
     <section id="home" class="home vh-100 vw-100 position-relative text-center">
-        <div class="glide vh-100 vw-100">
-            <div class="glide__track" data-glide-el="track">
-                <div class="glide__slides">
-                    <div class="home-item glide__slide d-flex justify-content-center align-items-center flex-column">
-                        <span>Welcome to</span>
-                        <h1>Gohan Restaurant</h1>
-                    </div>
-                    <div class="home-item glide__slide d-flex justify-content-center align-items-center flex-column">
-                        <span>Delecieus</span>
-                        <h1>Japanese Food</h1>
-                    </div>
-                    <div class="home-item glide__slide d-flex justify-content-center align-items-center flex-column">
-                        <span>Welcome to</span>
-                        <h1>Gohan Restaurant</h1>
-                    </div>
-                    <div class="home-item glide__slide d-flex justify-content-center align-items-center flex-column">
-                        <span>Welcome to</span>
-                        <h1>Gohan Restaurant</h1>
-                    </div>
-                </div>
+        <div class="conatiner h-100 w-100">
+            <div class="home-item d-flex justify-content-center align-items-center flex-column">
+                <span>Welcome to</span>
+                <h1>Gohan Restaurant</h1>
             </div>
+            
+            <div class="home-text">
+                <p>Sushi, Ramen and more Traditional food!</p>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-        <div class="home-text">
-            <p>Sushi, Ramen and more Traditional food!</p>
-        </div>
-        <a href="#about" class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
     </section>
     <!-- Home Section Ends -->
 
@@ -310,11 +310,16 @@
         </div>
     </section>
     <!-- Menu Section Ends -->
+    
 
 
     <!-- Footer  Start -->
     <footer class="contact position-relative" id="footer"></footer> 
     <!-- Footer Ends -->
+
+</main>
     
+    
+
 </body>
 </html>

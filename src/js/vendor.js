@@ -8,3 +8,9 @@ import '@fortawesome/fontawesome-free/js/brands'
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const script = document.createElement('script');
+
+script.src = "https://cdn.jsdelivr.net/npm/@barba/core";
+
+document.getElementById('body').appendChild(script);
