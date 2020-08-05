@@ -5,6 +5,15 @@
 
     .dishes{
         margin-left: -200px;
+
+        div{
+            &:nth-child(1) .dish.lazy-bg-loaded{background: url('/src/img/dishes/01.jpg');}
+            &:nth-child(2) .dish.lazy-bg-loaded{background: url('/src/img/dishes/05.jpg');}
+            &:nth-child(3) .dish.lazy-bg-loaded{background: url('/src/img/dishes/08.jpg');}
+            &:nth-child(4) .dish.lazy-bg-loaded{background: url('/src/img/dishes/03.jpg');}
+            &:nth-child(5) .dish.lazy-bg-loaded{background: url('/src/img/dishes/07.jpg');}
+            &:nth-child(6) .dish.lazy-bg-loaded{background: url('/src/img/dishes/06.jpg');}
+        }
     }
 
     .dish{
@@ -32,8 +41,10 @@
             }
         }
 
-        &:nth-child(1){background-image: url('/src/img/dishes/01.jpg');}
-        &:nth-child(2){background-image: url('/src/img/dishes/03.jpg');}
+
+        
+
+        
     }
 
     .circle-arrow{

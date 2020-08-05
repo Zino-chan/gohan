@@ -9,7 +9,8 @@
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^4.5.0",
     "gsap": "^3.4.2",
-    "smooth-scrollbar": "^8.5.2"
+    "smooth-scrollbar": "^8.5.2",
+    "yall-js": "^3.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",

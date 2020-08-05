@@ -1,7 +1,8 @@
 .reservation{
     @include bgImg();
-    background-image: url('/src/img/bg.jpg');
     padding: 7rem 0;
+
+    &.lazy-bg-loaded{background: url('/src/img/bg.jpg');}
     //background-attachment: fixed;
 
     .booking-form{

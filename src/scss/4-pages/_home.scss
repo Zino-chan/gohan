@@ -1,9 +1,11 @@
 .home{
     padding: 5rem;
     @include bgImg();
-        color: $white;
-        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-            url('/src/img/dishes/02.jpg');
+    color: $white;
+    
+    &.lazy-bg-loaded{background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url('/src/img/dishes/02.jpg');}
+
     .carousel-content{
         z-index: -1;
     }

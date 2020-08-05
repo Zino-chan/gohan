@@ -1,7 +1,11 @@
 .open-hours{
     @include bgImg();
-    background-image: url('/src/img/dishes/11.jpg');
     padding: 6rem 0;
+
+    &.lazy-bg-loaded{
+        background: url('/src/img/dishes/11.jpg');
+    }
+
     .container{
         z-index: 4;
         position: relative;
