@@ -1,7 +1,7 @@
 {
   "name": "sand",
   "version": "1.0.0",
-  "description": "watches ecommerce website",
+  "description": "Japanese restaurant website",
   "main": "index.js",
   "dependencies": {
     "@barba/core": "^2.9.7",
@@ -42,6 +42,6 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Zineb Elguil",
+  "license": "MIT"
 }

@@ -29,6 +29,11 @@ window.addEventListener('DOMContentLoaded',() => {
 		document.querySelector('.menu-toggler').classList.toggle('open');
 	})
 
+	document.querySelector('form').addEventListener('submit', e => {
+		e.preventDefault();
+		alert('Reservation Submitted Thank you for choosing our restaurant')
+	} )
+
  })
 
 
