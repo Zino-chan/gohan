@@ -61,7 +61,7 @@ export const pageAnimation = () => {
                 },  
                 x: '-100%',
                 opacity: 0,
-                duration: 2
+                duration: 1
             })
         })
     }
@@ -73,7 +73,7 @@ export const pageAnimation = () => {
                 },  
                 x: '100%',
                 opacity: 0,
-                duration: 2
+                duration: 1
             })
         });
     }
@@ -86,7 +86,7 @@ export const pageAnimation = () => {
                 },  
                 y: '-100%',
                 opacity: 0,
-                duration: 2
+                duration: 1
             })
         });
     }
@@ -99,7 +99,7 @@ export const pageAnimation = () => {
                 },  
                 y: '100%',
                 opacity: 0,
-                duration: 2
+                duration: 1
             })
         });
     }
@@ -111,7 +111,7 @@ export const pageAnimation = () => {
                     trigger: item
                 },  
                 scale: 0,
-                duration: 2
+                duration: 1
             })
         })
     }        
@@ -123,7 +123,7 @@ export const pageAnimation = () => {
                     trigger: item
                 },  
                 rotateY: 180,
-                duration: 2
+                duration: 1
             })
         })
     }
