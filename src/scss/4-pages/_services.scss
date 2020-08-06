@@ -24,6 +24,11 @@
                 &.lazy-bg-loaded{background: url('/src/img/icons/scooter.png');}
             }
 
+            .cake{
+                @include bgImg(contain);
+                background: url('/src/img/icons/cake.png');
+            }
+
 
         }
     }
