@@ -8,9 +8,8 @@
 
         .services-img{
             @include bgImg(contain);
-            font-size: 12rem;
             color: $primary-color;
-            background-color: #ffedde;
+            background-color: #ffedde!important;
 
             &.table-img{background: url('/src/img/icons/table.png');}
            
