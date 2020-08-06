@@ -2,7 +2,7 @@
     @include bgImg();
     padding: 7rem 0;
 
-    &.lazy-bg-loaded{background: url('/src/img/bg.jpg');}
+    &.lazy-bg-loaded{background: url('/src/img/bg1.jpg');}
     //background-attachment: fixed;
 
     .booking-form{

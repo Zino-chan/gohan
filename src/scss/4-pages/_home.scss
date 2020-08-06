@@ -4,7 +4,7 @@
     color: $white;
     
     &.lazy-bg-loaded{background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-        url('/src/img/dishes/02.jpg');}
+        url('/src/img/home-bg.jpg');}
 
     .carousel-content{
         z-index: -1;
