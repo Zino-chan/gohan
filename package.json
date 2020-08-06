@@ -4,8 +4,6 @@
   "description": "Japanese restaurant website",
   "main": "index.js",
   "dependencies": {
-    "@barba/core": "^2.9.7",
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^4.5.0",
     "gh-pages": "^3.1.0",
