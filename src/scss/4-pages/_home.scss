@@ -2,6 +2,7 @@
     padding: 5rem;
     @include bgImg();
     color: $white;
+    min-height: 100vh;
     
     &.lazy-bg-loaded{background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
         url('/src/img/home-bg.jpg');}
