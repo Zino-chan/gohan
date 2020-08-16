@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -6,6 +7,17 @@ module.exports = {
         components: "./src/js/components.js",
         main: "./src/js/main.js"
     },
+
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: "./public",
+                    to: 'public',
+                  },
+            ]
+        }),
+    ],
 
     module: {
         rules:[

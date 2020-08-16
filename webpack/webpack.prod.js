@@ -18,6 +18,8 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/index.html",
         filename: '../index.html',
         minify: {
@@ -27,6 +29,8 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/about.html",
         filename: '../about.html',
         minify: {
@@ -36,6 +40,8 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/reservation.html",
         filename: '../reservation.html',
         minify: {
@@ -45,6 +51,8 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/services.html",
         filename: '../services.html',
         minify: {
@@ -54,6 +62,8 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/menu.html",
         filename: '../menu.html',
         minify: {
@@ -63,6 +73,8 @@ module.exports = merge(common, {
         }
       }),
       new HtmlWebpackPlugin({
+        title: 'Gohan',
+        favicon:  './public/favicon/favicon.png',
         template: "./src/contact.html",
         filename: '../contact.html',
         minify: {
